@@ -43,7 +43,7 @@ body {
     position: relative;
     padding: 100px 0;
     overflow: hidden;
-    z-index: -1;
+    z-index: 0;
 }
 
 @media (max-width: 767px) {
