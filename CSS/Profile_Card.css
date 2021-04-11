@@ -1,0 +1,226 @@
+/* Start General Rules */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/* Small Screen */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large Screen */
+@media (min-width: 1200px) {
+    .container {
+        width: 1440px;
+    }
+}
+
+/* End General Rules */
+
+/* Start The Background */
+
+.parent  {
+    /* background-color: #19a1ad; */
+    background-image: linear-gradient( to left,#19a2ae, #19a1ad);
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .parent {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.parent::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: -500px;
+    left: -200px;
+    width: 100%;
+    background-image: url("../images/bg-pattern-top.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.parent::after {
+    content: "";
+    position: absolute;
+    bottom: -300px;
+    right: -800px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .parent::before {
+        /* bottom: 0; */
+        /* top: 100; */
+        left: -800px;
+        /* left: -600px; */
+        width:1000px;
+    }
+    
+    .parent::after {
+        bottom: -300px;
+        right: -800px;
+        width: 1000px;
+    }
+}
+
+/* .parent .image:first-of-type {
+    position: absolute;
+    bottom: 50px;
+    left: -400px;
+    z-index: 0;
+} */
+
+/* .parent .image:last-of-type {
+    position: absolute;
+    top: 50px;
+    right: -400px;
+    z-index: 0;
+} */
+
+
+/* End The Background */
+
+/* Start Card */
+
+.parent .container .card {
+    margin: 0 auto;
+    text-align: center;
+    width: 370px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 3px 10px 0 #05909c;
+}
+
+@media (max-width: 767px) {
+    .parent .container .card {
+        width: 320px;
+    }
+}
+
+.parent .container .card h3 {
+    color: hsl(229, 23%, 23%);
+}
+
+.parent .container p {
+    color: hsl(0, 0%, 59%);
+}
+
+.parent .container .card header {
+    background-image: url("../images/bg-pattern-card.svg");
+    background-size: cover;
+    height: 150px;
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 20px 20px 0 0;
+}
+
+.parent .container .card header .profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent .container .card header .profile-image img{
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    border: 3px solid white;
+}
+
+.parent .container .card .text .name {
+    border-bottom: 1px solid #eee;
+}
+
+.parent .container .card .text .name h3 {
+    margin-bottom: 0;
+}
+
+.parent .container .card .text .name p {
+    margin-top: 10px;
+}
+
+.parent .container .card .text .name span {
+    font-weight: 300;
+    margin-left: 7px;
+    color: hsl(227, 10%, 46%);
+}
+
+.parent .container .card .text .stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.parent .container .card .text .stats div {
+    width: calc(100% - 40px);
+}
+
+.parent .container .card .text .stats div h3 {
+    margin-bottom: 0;
+}
+
+.parent .container .card .text .stats div p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* End Card */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Colors */
+
+.color {
+    color: hsl(185, 75%, 39%)
+    
+    ;
+
+
+    
+
+
+
+}
